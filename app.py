@@ -13,7 +13,7 @@ with open('./models/linear.pkl', 'rb') as f:
 st.set_page_config(page_title="Dự đoán Calories tiêu hao", layout="wide")
 st.markdown("<h1 style='text-align: center; color: #4F8BF9;'>Dự đoán Calories tiêu hao</h1>", unsafe_allow_html=True)
 
-# Giao diện nhập liệu
+# Giao diện nhập dữ liệu
 with st.form("input_form"):
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -55,9 +55,7 @@ if submitted:
         "Water_Intake (liters)": water_intake,
         "Workout_Frequency (days/week)": workout_freq,
         "Experience_Level": experience_level,
-        # "BMI": bmi  # Nếu pipeline cần BMI, bỏ comment dòng này
     }])
-    # Nếu pipeline không dùng BMI, không cần dòng trên
 
     # Tiền xử lý & dự báo
     X = preprocessor.transform(input_df)
