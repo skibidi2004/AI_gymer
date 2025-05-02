@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#2979FF"         # Xanh dương nổi bật cho nút, tiêu đề
+backgroundColor = "#FFFFFF"      # Nền trắng
+secondaryBackgroundColor = "#F7F8FA" # Nền phụ nhẹ cho card, form
+textColor = "#222222"            # Chữ đen đậm
+font = "sans serif"
